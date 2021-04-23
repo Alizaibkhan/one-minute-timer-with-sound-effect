@@ -15,7 +15,7 @@ def colour():
     if i >= 0:
         if color:
             can_obj['bg'] = 'deepskyblue3'
-            winsound.PlaySound('tick.wav',winsound.SND_FILENAME | winsound.SND_ASYNC)
+            winsound.PlaySound('tick.wav', winsound.SND_FILENAME | winsound.SND_ASYNC)
             color = False
         else:
             can_obj['bg'] = 'royalblue1'
@@ -34,7 +34,7 @@ def colour():
 can_obj = Canvas(root, height=600, width=600, bg='royalblue1')
 can_obj.pack()
 
-can_obj.create_rectangle(100, 100, 500, 300, fill='steelblue1')      # big rectangle centre
+can_obj.create_rectangle(100, 100, 500, 300, fill='steelblue1', outline='green2',width=5)      # big rectangle centre
 can_obj.create_rectangle(200, 150, 400, 250, fill='cyan')      # small rectangle centre
 
 can_obj.create_line(0, 0, 100, 100, width=5, fill='green2')
